@@ -26,7 +26,7 @@ run.py               CLI: run + analyze
 preflight_bedrock.py read-only AWS check + inference-profile lister
 ```
 
-## 1. Validate cheaply offline (no AWS, no cost)
+## 1. Validate offline
 
 The mock provider deterministically simulates an Observer that compresses harder
 as its budget shrinks. Use it to confirm the pipeline and metrics before spending
@@ -41,7 +41,7 @@ On the mock, compression and vocabulary-growth signals show up and the task stay
 decodable; the opacity and emergence tests stay flat because the mock's codebook
 is fixed and shared by construction — those only become meaningful with real LLMs.
 
-## 2. Preflight Bedrock (read-only, no token cost)
+## 2. Preflight Amazon Bedrock (read-only, no token cost)
 
 Verifies credentials and lists inference profiles in us-east-1 so you can pick
 model selectors. Makes no model invocations.

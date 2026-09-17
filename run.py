@@ -1,7 +1,7 @@
 """CLI: run the paired experiment and print metrics + pre-registered tests.
 
 Examples:
-  # cheap offline validation (no AWS):
+  # offline validation:
   python run.py --provider mock --sessions 8 --rounds 30
 
   # scaled run on Bedrock us-east-1 (resolves inference profiles by substring):
