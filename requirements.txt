@@ -1,0 +1,5 @@
+# Core analysis
+scipy>=1.11
+
+# Bedrock (real-LLM phase only; the mock provider needs none of this)
+boto3>=1.34

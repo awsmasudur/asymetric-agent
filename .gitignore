@@ -1,0 +1,17 @@
+# Personal writeups — not for publication
+SPEC.md
+BLOG.md
+
+# Experiment run data (raw transcripts / local logs)
+runs/
+runs_*/
+*.sqlite
+*.jsonl
+runs_powered_log.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
